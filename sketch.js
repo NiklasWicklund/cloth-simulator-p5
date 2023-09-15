@@ -11,11 +11,20 @@ size = 5;
 
 last_interaction = 0;
 max_idle_time = 5;
+let slider;
 function setup() {
+    slider = createSlider(2, 25, 5,1);
+    rows = cols = slider.value();
+    size = w/(rows*2);
+    slider.position(10, 10);
+    slider.style('width', '80px');
+
     var canvas = createCanvas(w, h, WEBGL);
     canvas.parent('sketch-holder');
     canvas.style('display', 'flex');
     cloth = new Cloth(rows, cols,size,createVector(0,0,0));
+
+    
 }
 function windowResized() {
     resizeCanvas(w, h);
@@ -23,6 +32,12 @@ function windowResized() {
 
 function draw(){
     
+    val = slider.value();
+    if(rows != cols || rows != val){
+        rows = cols = val;
+        size = w/(rows*2);
+        cloth = new Cloth(rows, cols,size,createVector(0,0,0));
+    }
     background(255);
     //Calculate dt
     //Draw square at top left
