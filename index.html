@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    <meta charset="UTF-8">
+    <script src="sketch.js"></script>
+    <script src="cloth.js"></script>
+    <script src="pooint.js"></script>
+</head>
+<body>
+    <h1>Cloth simulator</h1>
+    <div class="information">
+        <p>
+            This is a cloth simulator that make use of Verlet Integration and The Jacobsen Method. Due to performance limitations the cloth is scaled down
+            but a larger version was done in C++ and OpenGL. The code for that can be found <a href="https://github.com/NiklasWicklund/ClothSimulator">here</a>.
+        </p>
+        <h4>Verlet Integration</h4>
+        <p>
+            Verlet integration is a numerical method used to integrate Newton's equations of motion. It is a time integrator that is used to calculate the position of a particle
+            in the next time step. The method is based on the Taylor expansion of the position of a particle.
+        </p>
+        <h4>Jacobsen Method</h4>
+        <p>
+            The Jacobsen method is used to apply constraints to the cloth. The method is based on the idea that the cloth is made up of springs that are connected to each other.
+        </p>
+    </div>
+    <div id="sketch-holder">
+        <!-- Our sketch will go here! -->
+    </div>
+    <div class="container">
+        
+        <div class="controls">
+            <h4>Controls</h4>
+            <div class="command">
+                <div class="button">LMB</div> <p class="description">Grab a point</p>
+            </div>
+            <div class="command">
+                <div class="button">LMB</div> + <div class="button">SHIFT</div> <p class="description">Drag over point to remove it</p>
+            </div>
+            <div class="command">
+                <div class="button">R</div> <p class="description">Reset cloth</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>2023 Niklas Wicklund</p>
+            <div class="social-links">
+                <a href="https://github.com/NiklasWicklund" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

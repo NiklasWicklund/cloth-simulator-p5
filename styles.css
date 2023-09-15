@@ -1,0 +1,78 @@
+body{
+    height : 100vh;
+    width: 70%;
+    margin: 0 auto; /* Center the div horizontally */
+    padding: 20px; /* Add padding to the content inside the div */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow to the div */
+}
+.sketch-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.container {
+
+}
+.container h4{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+}
+.information {
+    margin-top: 10px;
+}
+
+.command {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.button {
+    background-color: #bababa;
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 10%;
+}
+.description {
+    margin-left: 10px;
+}
+
+footer {
+    margin-top: 50px;
+    border-top: #000 1px solid;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    border: #000 1px solid;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
